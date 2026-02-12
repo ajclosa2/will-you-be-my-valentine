@@ -54,14 +54,17 @@
 })();
 */
 const messages = [
-    "hala bakit no?",
-    "sure kana ba talaga?",
-    "bebe please...",
-    "final answer na ba yan",
-    "ay talaga naman",
-    "di na ko mangungulit",
-    "sige na pleaaase",
-    "say yes please! ❤️"
+    "hala bakit no?🥺",
+    "sure kana ba talaga?😢",
+    "bebeb please...😭",
+    "final answer na ba yan⁉️",
+    "ay ayaw niya talaga oh🫢",
+    "di na ko mangungulit😒",
+    "sige na pleaaase🥹",
+    "hindi mo na ba ako mahal ❤️",
+    "PLZ MY BEBE 😩",
+    "yie magyes na yan siya 🤞",
+    "say yeeees my love 🫶"
 ];
 
 let messageIndex = 0;
