@@ -6,7 +6,70 @@
     <title>Knew you would say yes!</title>
     <link rel="stylesheet" href="./yes_style.css">
 </head>
-<body>
+<body><canvas id="confetti-canvas"></canvas>
+
+<script>
+const canvas = document.getElementById("confetti-canvas");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let hearts = [];
+
+function createHeart() {
+    return {
+        x: Math.random() * canvas.width,
+        y: -20,
+        size: Math.random() * 20 + 10,
+        speed: Math.random() * 2 + 1,
+        opacity: Math.random(),
+    };
+}
+
+function drawHeart(x, y, size, opacity) {
+    ctx.save();
+    ctx.globalAlpha = opacity;
+    ctx.fillStyle = "red";
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.bezierCurveTo(x - size / 2, y - size / 2,
+                      x - size, y + size / 3,
+                      x, y + size);
+    ctx.bezierCurveTo(x + size, y + size / 3,
+                      x + size / 2, y - size / 2,
+                      x, y);
+    ctx.fill();
+    ctx.restore();
+}
+
+function update() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    if (hearts.length < 100) {
+        hearts.push(createHeart());
+    }
+
+    hearts.forEach((heart, index) => {
+        heart.y += heart.speed;
+        drawHeart(heart.x, heart.y, heart.size, heart.opacity);
+
+        if (heart.y > canvas.height) {
+            hearts.splice(index, 1);
+        }
+    });
+
+    requestAnimationFrame(update);
+}
+
+update();
+
+window.addEventListener("resize", () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
+</script>
+
     <div class="container">
         <h1 class="header_text">Knew you would say yes!</h1>
         <div class="gif_container">
