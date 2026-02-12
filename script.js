@@ -58,9 +58,11 @@ const messages = [
     "sure kana ba talaga? 🥲",
     "bebe please...😢 ",
     "final answer na ba yan ⁉️",
-    "ay talaga naman 🙄",
+    "ay ayaw talaga oh 🙄",
     "di na nga ko mangungulit 😒",
     "sige na kasiiii 🥹",
+    "HINDI MO NA BA AKO LAB 💔"
+    "yie mag-yes na yan sha 😌"
     "PLEASE SAY YES TO ME 🫶"
 ];
 
