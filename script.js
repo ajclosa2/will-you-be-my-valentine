@@ -54,16 +54,14 @@
 })();
 */
 const messages = [
-    "hala bakit no? 🥺",
-    "sure kana ba talaga? 🥲",
-    "bebe please...😢 ",
-    "final answer na ba yan ⁉️",
-    "ay ayaw talaga oh 🙄",
-    "di na nga ko mangungulit 😒",
-    "sige na kasiiii 🥹",
-    "HINDI MO NA BA AKO LAB 💔",
-    "yie mag-yes na yan sha 😌",
-    "PLEASE SAY YES TO ME 🫶"
+    "hala bakit no?",
+    "sure kana ba talaga?",
+    "bebe please...",
+    "final answer na ba yan",
+    "ay talaga naman",
+    "di na ko mangungulit",
+    "sige na pleaaase",
+    "say yes please! ❤️"
 ];
 
 let messageIndex = 0;
@@ -71,10 +69,8 @@ let messageIndex = 0;
 function handleNoClick() {
     const noButton = document.querySelector('.no-button');
     const yesButton = document.querySelector('.yes-button');
-
     noButton.textContent = messages[messageIndex];
     messageIndex = (messageIndex + 1) % messages.length;
-
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
     yesButton.style.fontSize = `${currentSize * 1.5}px`;
 }
@@ -82,7 +78,3 @@ function handleNoClick() {
 function handleYesClick() {
     window.location.href = "yes_page.html";
 }
-
-// Attach event listeners
-document.querySelector('.no-button').addEventListener('click', handleNoClick);
-document.querySelector('.yes-button').addEventListener('click', handleYesClick);
