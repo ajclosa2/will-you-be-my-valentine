@@ -61,7 +61,7 @@ const messages = [
     "ay ayaw niya talaga oh🫢",
     "di na ko mangungulit😒",
     "sige na pleaaase🥹",
-    "hindi mo na ba ako mahal ❤️",
+    "hindi mo na ba ako mahal ❤️‍🩹",
     "PLZ MY BEBE 😩",
     "yie magyes na yan siya 🤞",
     "say yeeees my love 🫶"
