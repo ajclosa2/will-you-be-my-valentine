@@ -61,11 +61,10 @@ const messages = [
     "ay ayaw talaga oh 🙄",
     "di na nga ko mangungulit 😒",
     "sige na kasiiii 🥹",
-    "HINDI MO NA BA AKO LAB 💔"
-    "yie mag-yes na yan sha 😌"
+    "HINDI MO NA BA AKO LAB 💔",
+    "yie mag-yes na yan sha 😌",
     "PLEASE SAY YES TO ME 🫶"
 ];
-
 let messageIndex = 0;
 
 function handleNoClick() {
